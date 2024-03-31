@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html03</title>
+	<style>
+		{
+			box-sizing:border-box; 
+		}
+		
+		.body {
+			font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			margin: 0;
+		}
+			
+		.header {
+			padding: 30px;
+			text-align: center;
+			background: #264653;
+			color: white
+		}	
+			
+		.navbar {
+			
+			display: flex;
+			background-color: #333
+			
+		}
+		
+		.navbar a {
+			
+			color:white;
+			padding:14px 0px;
+			text-decoration: none;
+			text-align: center;
+			width: 100%
+		}
+		
+		.navbar a:hover {
+			
+			background-color: #DDDDDD;
+			color:black;
+		}
+		
+		.row {
+			
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 0px
+			
+		}
+		
+		.column {
+			
+			flex: 25%;
+			max-width:50%;
+			padding: 0 4px;
+				
+		}
+		
+		
+		
+		.column img {
+			
+			margin-top: 8px;
+			vertical-align: middle;
+			
+		}
+		
+		@media screen and (max-width:800px) {
+			.row,.navbar{
+				
+				flex-direction: column;
+			}
+		}
+		
+		@media (max-width:800px) {
+			.column {
+				flex:50%;
+				max-width: 50%;
+			}
+		}
+	
+		@media (max-width:600px) {
+			.column {
+				flex:100%;
+				max-width: 100%;
+			}
+			
+		}
+	
+	
+	</style>
+</head>
+
+<body>
+	
+	<div class="header">
+	<h1>My Portfolio</h1>
+	</div>
+	
+	<div class="navbar">
+	<a href="#">My Work</a>
+	<a href="#">My Services</a>
+	<a href="#">About Me</a>
+	<a href="#">Contact</a>	
+	</div>
+	
+	<div class="row">
+		<div class="column">
+		<img src="images/Resolved Tote Bag.png" style="width: 100%">
+		<img src="images/unmoved shirt mockup.png" style= "width: 100%">	
+		</div>
+		
+	<div class="column">
+		<img src="images/Redemption tote.png" style="width: 100%">
+		<img src="images/redemption shirt smaller.png" style="width: 100%">
+		</div>
+	</div>
+	
+	
+	
+</body>
+</html>
